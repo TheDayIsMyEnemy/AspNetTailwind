@@ -17,13 +17,14 @@
   </environment>
 </head>
 
-<partial name="_HeaderPartial" />
-
 <body>
+  <partial name="_HeaderPartial" />
 
-  <main id="main" role="main">
+  <main role="main">
     @RenderBody()
   </main>
+
+  <partial name="_FooterPartial" />
 
   <environment include="Development">
     <script src="~/dist/app.js" defer></script>
